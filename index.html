@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="icon" href="/assets/my-photo-modified.png" />
+    <style>
+      body {
+        margin: 0;
+        background-color: #001f3f;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        background-color: black;
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+      header img {
+        margin-left: 30px;
+        width: 135px;
+        height: 80px;
+      }
+      header h1 {
+        margin-left: auto;
+        margin-right: 40%;
+        font-size: 2rem;
+        color: white;
+        text-decoration: underline;
+      }
+      .container {
+        display: flex;
+      }
+      .left-box {
+        width: 69%;
+        padding: 50px 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      .right-box {
+        width: 30%;
+      }
+      .right-box > img {
+        width: 100%;
+        height: 73%;
+        border-radius: 50%;
+        margin-top: 30px;
+        border: 3px solid blue;
+        transition: transform 0.5s ease-in-out;
+      }
+      .right-box > img:hover {
+        transform: scale(1.2);
+      }
+      .box {
+        background-color: #3a6d8c;
+        width: 350px;
+        height: 220px;
+        border-radius: 12px;
+        color: #ead8b1;
+        font-size: 1.5rem;
+        text-align: center;
+        align-content: center;
+      }
+      .box:hover {
+        background-color: #6a9ab0;
+        color: black;
+        font-weight: bold;
+        box-shadow: 2px 4px 20px #6a9ab0;
+      }
+      .box1,
+      .box3,
+      .box5 {
+        margin-left: 120px;
+      }
+      a {
+        text-decoration: none;
+      }
+      p {
+        text-align: center;
+        font-size: 1.3rem;
+        color: white;
+        font-weight: bold;
+      }
+      footer {
+        background-color: gray;
+        height: 5vh;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        padding: 0 240px;
+      }
+      .icons {
+        margin-left: auto;
+      }
+      .icons > nav > a > img {
+        width: 35px;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/assets/ijse.png" alt="" />
+      <h1>Usage of Cascade Style Sheets - 02</h1>
+    </header>
+    <div class="container">
+      <div class="left-box">
+        <a href="/pages/case-01.html" target="_blank"
+          ><div class="box box1">Case 01</div></a
+        >
+        <a href="/pages/case-02.html" target="_blank"
+          ><div class="box box2">Case 02</div></a
+        >
+        <a href="/pages/case-03.html" target="_blank"
+          ><div class="box box3">Case 03</div></a
+        >
+        <a href="/pages/case-04.html" target="_blank"
+          ><div class="box box4">Case 04</div></a
+        >
+        <a href="/pages/case-05.html" target="_blank"
+          ><div class="box box5">Case 05</div></a
+        >
+        <a href="/pages/case-06.html" target="_blank"
+          ><div class="box box6">Case 06</div></a
+        >
+      </div>
+      <div class="right-box">
+        <img src="/assets/my-photo.jpeg" alt="shachiru-photo" />
+        <p>Shachiru Rashmika</p>
+        <p>NIC - 200332910517</p>
+      </div>
+    </div>
+    <footer>
+      Developed by Shachiru rashmika &copy
+      <div class="icons">
+        <nav>
+          <a
+            href="www.linkedin.com/in/shachiru-rashmika-6b5761308"
+            target="_blank"
+            ><img src="/assets/linkedin-black.png" alt="linkedin"
+          /></a>
+          <a href="https://github.com/Shachiru" target="_blank"
+            ><img src="/assets/github-black.png" alt="github"
+          /></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
