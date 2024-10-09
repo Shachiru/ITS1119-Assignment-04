@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Case 02</title>
     <link rel="icon" href="/assets/my-photo-modified.png" />
     <style>
       body {
         margin: 0;
+        background-color: #1d4ee2;
+      }
+      .main-circle {
+        width: 520px;
+        height: 520px;
+        border-radius: 50%;
+        background-color: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+      }
+      .inner-circle {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background-color: rgb(98, 97, 97);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      span {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: white;
+      }
+      .main-circle:hover {
+        transform: rotate(360deg);
+        background-color: red;
       }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="main-circle">
+      <div class="inner-circle">
+        <span>RWAD</span>
+      </div>
+    </div>
+  </body>
 </html>
