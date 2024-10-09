@@ -1,17 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Case 03</title>
     <link rel="icon" href="/assets/my-photo-modified.png" />
     <style>
       body {
         margin: 0;
       }
+      .box {
+        width: 250px;
+        height: 100px;
+        border-radius: 15px;
+        background-color: blue;
+        position: absolute;
+        animation: go-around 12s linear infinite;
+      }
+      @keyframes go-around {
+        0%,
+        100% {
+          top: 0;
+          left: 0;
+        }
+        12.5% {
+          top: 0;
+          left: calc(100% - 250px);
+          transform: rotate(180deg);
+          background-color: yellow;
+        }
+        25% {
+          top: calc(100% - 100px);
+          left: calc(100% - 250px);
+          transform: rotate(360deg);
+          background-color: red;
+        }
+        37.5% {
+          top: calc(100% - 100px);
+          transform: rotate(180deg);
+          left: 0;
+        }
+        50% {
+          top: 0;
+          left: 0;
+          transform: rotate(360deg);
+          background-color: orange;
+        }
+        62.5% {
+          top: calc(100% - 100px);
+          transform: rotate(180deg);
+          left: 0;
+        }
+        75% {
+          top: calc(100% - 100px);
+          left: calc(100% - 250px);
+          transform: rotate(360deg);
+          background-color: red;
+        }
+        87.5% {
+          top: 0;
+          left: calc(100% - 250px);
+          transform: rotate(180deg);
+          background-color: yellow;
+        }
+      }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
 </html>
