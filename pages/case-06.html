@@ -1,17 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Case 06</title>
     <link rel="icon" href="/assets/my-photo-modified.png" />
     <style>
       body {
         margin: 0;
       }
+      .hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/assets/icons/sky.jpg);
+        background-size: cover;
+        position: relative;
+        overflow-x: hidden;
+      }
+      .city {
+        background-image: url(/assets/icons/city.png);
+        position: absolute;
+        width: 500%;
+        height: 250px;
+        bottom: 250px;
+        animation: city 10s ease infinite;
+      }
+      @keyframes city {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(-1000px);
+        }
+        95% {
+          transform: translateX(-1800px);
+        }
+        100% {
+          transform: translateX(-1800px);
+        }
+      }
+      .road {
+        background-image: url(/assets/icons/road.jpg);
+        position: absolute;
+        width: 500%;
+        height: 250px;
+        bottom: 0;
+        animation: road 10s ease infinite;
+      }
+      @keyframes road {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(-800px);
+        }
+        95% {
+          transform: translateX(-1800px);
+        }
+        100% {
+          transform: translateX(-1800px);
+        }
+      }
+      .car {
+        width: 400px;
+        position: absolute;
+        bottom: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .car img {
+        width: 100%;
+        animation: car 1s linear infinite;
+      }
+      @keyframes car {
+        0% {
+          transform: translateY(-1px);
+        }
+        50% {
+          transform: translateY(1px);
+        }
+        100% {
+          transform: translateY(-1px);
+        }
+      }
+      .wheel {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 232px;
+        z-index: 2;
+      }
+      .wheel img {
+        width: 72px;
+        height: 72px;
+        animation: wheel 5s ease infinite;
+      }
+      @keyframes wheel {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(-360deg);
+        }
+        95% {
+          transform: rotate(-180deg);
+        }
+        100% {
+          transform: rotate(-180deg);
+        }
+      }
+      .font-wheel {
+        left: 80px;
+        position: absolute;
+      }
+      .back-wheel {
+        left: -165px;
+        position: absolute;
+      }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="road"></div>
+      <div class="city"></div>
+      <div class="car">
+        <img src="/assets/icons/car.png" alt="car" />
+      </div>
+      <div class="wheel">
+        <img src="/assets/icons/wheel.png" class="font-wheel" />
+        <img src="/assets/icons/wheel.png" class="back-wheel" />
+      </div>
+    </div>
+  </body>
 </html>
